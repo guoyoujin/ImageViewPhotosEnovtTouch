@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/list_left_close"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:background="@drawable/icon_close_selector" />
+
+    <TextView
+        android:id="@+id/list_left_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/list_left_close"
+        android:background="@drawable/device_door" />
+
+    <LinearLayout
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/list_left_icon"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/list_center_top"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="11111"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/list_center_bottom"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="2222"
+            android:textColor="#C2BEBB"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/list_right"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/arrow_right_selector" />
+
+</RelativeLayout>
